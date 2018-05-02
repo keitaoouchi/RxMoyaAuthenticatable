@@ -22,7 +22,7 @@ pod 'RxMoyaAuthenticatable'
 
 ## Author
 
-keita.ouchi, keita.ouchi@dena.com
+keitaoouchi, keita.oouchi@gmail.com
 
 ## License
 
