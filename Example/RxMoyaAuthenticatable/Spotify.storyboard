@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tnn-nx-YL7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Spotify View Controller-->
+        <scene sceneID="7Fh-BO-hdw">
+            <objects>
+                <viewController id="tnn-nx-YL7" customClass="SpotifyViewController" customModule="RxMoyaAuthenticatable_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DkQ-rf-yFz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="W7O-uc-Efx">
+                                <rect key="frame" x="103.5" y="64" width="168" height="114"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFM-8L-d3N">
+                                        <rect key="frame" x="0.0" y="0.0" width="168" height="30"/>
+                                        <state key="normal" title="1. Sign in to Spotify"/>
+                                        <connections>
+                                            <action selector="onTapSigninWithSender:" destination="tnn-nx-YL7" eventType="touchUpInside" id="ajf-gP-R7t"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KlK-3T-Uf3">
+                                        <rect key="frame" x="0.0" y="42" width="168" height="30"/>
+                                        <state key="normal" title="2. Refresh Access Token"/>
+                                        <connections>
+                                            <action selector="onTapRefreshWithSender:" destination="tnn-nx-YL7" eventType="touchUpInside" id="D1n-eu-4I2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTQ-vM-Uq8">
+                                        <rect key="frame" x="0.0" y="84" width="168" height="30"/>
+                                        <state key="normal" title="3. Demonstration"/>
+                                        <connections>
+                                            <action selector="onTapDemoWithSender:" destination="tnn-nx-YL7" eventType="touchUpInside" id="PtG-bz-DaZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="W7O-uc-Efx" firstAttribute="centerX" secondItem="DkQ-rf-yFz" secondAttribute="centerX" id="php-kp-5MH"/>
+                            <constraint firstItem="W7O-uc-Efx" firstAttribute="top" secondItem="zRC-RK-pxK" secondAttribute="top" constant="44" id="vvZ-1Z-leu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zRC-RK-pxK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d3q-sb-W8e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="70"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,24 @@
+use_frameworks!
+platform :ios, '11.0'
+
+plugin 'cocoapods-keys', {
+  project: 'RxMoyaAuthenticatable_Example',
+  keys: [
+    "spotifyClientId",
+    "spotifyClientSecret",
+    "spotifyCallbackUri",
+    "spotifyCallbackUrlScheme"
+  ]
+}
+
+target 'RxMoyaAuthenticatable_Example' do
+  pod 'RxMoyaAuthenticatable', :path => '../'
+  pod 'KeychainAccess'
+
+  target 'RxMoyaAuthenticatable_Tests' do
+    inherit! :search_paths
+
+    pod 'Quick', '~> 1.2.0'
+    pod 'Nimble', '~> 7.0.2'
+  end
+end

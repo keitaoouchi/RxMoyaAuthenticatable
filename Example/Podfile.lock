@@ -1,0 +1,54 @@
+PODS:
+  - Alamofire (4.7.2)
+  - KeychainAccess (3.1.1)
+  - Keys (1.0.1)
+  - Moya/Core (11.0.2):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Moya/RxSwift (11.0.2):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - Nimble (7.0.3)
+  - Quick (1.2.0)
+  - Result (3.2.4)
+  - RxMoyaAuthenticatable (0.1.0):
+    - Moya/RxSwift (~> 11.0)
+  - RxSwift (4.1.2)
+
+DEPENDENCIES:
+  - KeychainAccess
+  - Keys (from `Pods/CocoaPodsKeys`)
+  - Nimble (~> 7.0.2)
+  - Quick (~> 1.2.0)
+  - RxMoyaAuthenticatable (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - KeychainAccess
+    - Moya
+    - Nimble
+    - Quick
+    - Result
+    - RxSwift
+
+EXTERNAL SOURCES:
+  Keys:
+    :path: Pods/CocoaPodsKeys
+  RxMoyaAuthenticatable:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  KeychainAccess: 7bd430028059754a3debab3cfc0bd1fc7fb85df3
+  Keys: a576f4c9c1c641ca913a959a9c62ed3f215a8de9
+  Moya: a725035953bc1c0eb1be505ab903984501d82440
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  RxMoyaAuthenticatable: c945ebc2cf59842185d37e51d90d7bc1cb7ba4c8
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+
+PODFILE CHECKSUM: 04053a208812308e4e029c0e6295ea546e35fac4
+
+COCOAPODS: 1.5.0
