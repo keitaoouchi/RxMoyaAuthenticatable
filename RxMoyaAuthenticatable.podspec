@@ -7,6 +7,6 @@ Pod::Spec.new do |s|
   s.author           = { 'keita.oouchi' => 'keita.oouchi@gmail.com' }
   s.source           = { :git => 'https://github.com/keitaoouchi/RxMoyaAuthenticatable.git', :tag => s.version.to_s }
   s.ios.deployment_target = '11.0'
-  s.source_files = 'RxMoyaAuthenticatable/Classes/**/*'
+  s.source_files = 'RxMoyaAuthenticatable/*.{swift,h}'
   s.dependency 'Moya/RxSwift', '~> 11.0'
 end
