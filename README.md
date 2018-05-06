@@ -118,11 +118,19 @@ In this example, we implemented Spotify's [Authorization Code Flow](https://beta
 
 ## Installation
 
-RxMoyaAuthenticatable is available through [CocoaPods](https://cocoapods.org).
-To installit, simply add the following line to your Podfile:
+RxMoyaAuthenticatable is available through [CocoaPods](https://cocoapods.org) or [Carthage](https://github.com/Carthage/Carthage).
+
+### CocoaPods
 
 ```ruby
 pod 'RxMoyaAuthenticatable'
+```
+
+### Carthage
+
+```ruby
+github "Moya/Moya"
+github "keitaoouchi/RxMoyaAuthenticatable"
 ```
 
 ## Author
