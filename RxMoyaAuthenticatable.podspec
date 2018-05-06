@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'RxMoyaAuthenticatable'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'Attach persisted authentication to a request header and refresh authentication if needed.'
   s.homepage         = 'https://github.com/keitaoouchi/RxMoyaAuthenticatable'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

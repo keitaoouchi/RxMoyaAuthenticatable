@@ -1,6 +1,5 @@
 import Foundation
 import Moya
-import RxMoya
 import RxSwift
 
 // MARK: - Protocol
@@ -30,6 +29,9 @@ public struct RxMoyaAuthenticatable<API: TargetType, Authenticatable: Refreshabl
   private let disposeBag = DisposeBag()
 
   public init() {}
+
+  /// whether resume requests if refreshing token failed.
+  public var resumeOnError: Bool = false
 
   /// Before sending request, execute **finding persisted authentication**, **refreshing found authentication if needed**, **resume other requests** in a serial queue.
   public func requestClosure(endpoint: Endpoint, done: @escaping OnComplete) {
@@ -62,6 +64,9 @@ private extension RxMoyaAuthenticatable {
             },
             onError: { error in
               done(.failure(MoyaError.underlying(error, nil)))
+              if self.resumeOnError {
+                self.resume()
+              }
             }
           ).disposed(by: self.disposeBag)
       } else {
