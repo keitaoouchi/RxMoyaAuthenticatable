@@ -1,6 +1,6 @@
 # RxMoyaAuthenticatable
 
-[![CI Status](https://img.shields.io/travis/keita.ouchi/RxMoyaAuthenticatable.svg?style=flat)](https://travis-ci.org/keita.ouchi/RxMoyaAuthenticatable)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Version](https://img.shields.io/cocoapods/v/RxMoyaAuthenticatable.svg?style=flat)](https://cocoapods.org/pods/RxMoyaAuthenticatable)
 [![License](https://img.shields.io/cocoapods/l/RxMoyaAuthenticatable.svg?style=flat)](https://cocoapods.org/pods/RxMoyaAuthenticatable)
 [![Platform](https://img.shields.io/cocoapods/p/RxMoyaAuthenticatable.svg?style=flat)](https://cocoapods.org/pods/RxMoyaAuthenticatable)
